@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduLearn HelpBot | FAQ Chatbot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero-panel">
+      <div class="brand-mark" aria-hidden="true">✦</div>
+      <p class="eyebrow">CODEALPHA AI TASK 2</p>
+      <h1>Answers that<br />feel human.</h1>
+      <p class="hero-copy">A smart FAQ assistant for the fictional EduLearn course platform. It uses NLP text preprocessing and cosine similarity to find the best answer.</p>
+      <div class="feature-list" aria-label="Chatbot features">
+        <span>✓ NLTK preprocessing</span>
+        <span>✓ Cosine similarity</span>
+        <span>✓ FAQ intent matching</span>
+      </div>
+    </section>
+
+    <section class="chat-card" aria-label="EduLearn FAQ chatbot">
+      <header class="chat-header">
+        <div class="bot-avatar" aria-hidden="true">E</div>
+        <div>
+          <h2>EduLearn HelpBot</h2>
+          <p><span class="online-dot"></span> Online · usually replies instantly</p>
+        </div>
+      </header>
+
+      <div id="chatMessages" class="chat-messages" aria-live="polite">
+        <div class="message-row bot-row">
+          <div class="mini-avatar" aria-hidden="true">E</div>
+          <div class="message bot-message">Hi! I can answer common EduLearn questions. What would you like to know?</div>
+        </div>
+      </div>
+
+      <div class="suggestion-area">
+        <p>Try asking:</p>
+        <div class="suggestion-list">
+          {% for question in suggested_questions %}
+          <button class="suggestion" type="button">{{ question }}</button>
+          {% endfor %}
+        </div>
+      </div>
+
+      <form id="chatForm" class="chat-form">
+        <label class="sr-only" for="messageInput">Ask a question</label>
+        <input id="messageInput" type="text" maxlength="400" placeholder="Ask about courses, payments, certificates..." autocomplete="off" required />
+        <button id="sendButton" type="submit" aria-label="Send message">➜</button>
+      </form>
+      <p class="privacy-note">Demo FAQ chatbot · No conversations are stored.</p>
+    </section>
+  </main>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
