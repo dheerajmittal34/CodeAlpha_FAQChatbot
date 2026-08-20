@@ -1,0 +1,42 @@
+[
+  {
+    "question": "How do I create an EduLearn account?",
+    "answer": "Click Sign Up on the EduLearn home page, enter your name, email address, and password, then verify your email to activate the account."
+  },
+  {
+    "question": "How can I enroll in a course?",
+    "answer": "Open the course page, click Enroll Now, complete the payment if the course is paid, and the course will appear in your dashboard."
+  },
+  {
+    "question": "How do I reset my password?",
+    "answer": "On the login page, select Forgot Password, enter the email linked to your account, and use the reset link sent to your inbox."
+  },
+  {
+    "question": "Will I get a certificate after completing a course?",
+    "answer": "Yes. After completing all required lessons and assessments, you can download your course completion certificate from the course dashboard."
+  },
+  {
+    "question": "What payment methods are accepted?",
+    "answer": "EduLearn accepts credit cards, debit cards, UPI, and selected digital wallets. Available methods are shown during checkout."
+  },
+  {
+    "question": "Can I download course videos to watch offline?",
+    "answer": "Offline downloads are available in the EduLearn mobile app for courses where the instructor has enabled downloads."
+  },
+  {
+    "question": "How do I contact customer support?",
+    "answer": "Open the Help Center and choose Contact Support. You can submit a support request with your account email and a short description of the issue."
+  },
+  {
+    "question": "What is the refund policy?",
+    "answer": "You can request a refund within 7 days of purchase if you have completed less than 20% of the course. Refund eligibility is reviewed by the support team."
+  },
+  {
+    "question": "Where can I see my enrolled courses?",
+    "answer": "After signing in, open My Learning from the dashboard. It lists every course you have enrolled in and your current progress."
+  },
+  {
+    "question": "Can I change my email address?",
+    "answer": "Yes. Go to Profile Settings, choose Account Information, enter your new email address, and confirm it through the verification email."
+  }
+]
